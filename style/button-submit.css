@@ -1,0 +1,11 @@
+button[type="submit"]{
+    width: 90%;
+    height: 30%;
+    background-color: indigo;
+    color: blanchedalmond;
+}
+button[type="submit"]:hover {
+    background-color: blanchedalmond;
+    color: indigo;
+    cursor: pointer;
+}

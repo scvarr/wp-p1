@@ -1,7 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>title</title>
-</head>
+    <link href="style/main.css" rel="stylesheet">
+    <head>
+        <meta charset="UTF-8">
+        <title>title</title>
+    </head>
+    <body>
+        <div class="startpage">
+            <h1>Регистрация</h1>
+            <form class="mainform">
+                <div class ="form-input">
+                    <label for="input-name">Введите Ваше имя:</label>
+                    <input type="text" id="input-name" placeholder="Имя"/>
+                </div>
+                <div class = "form-input">
+                    <label for="input-password">Придумайте пароль:</label>
+                    <input type="password" id="input-password" placeholder="Пароль" disabled/>
+                </div>
+                <div class = "form-input">
+                    <label for="input-password-more">Введите пароль еще раз:</label>
+                    <input type="password" id="input-password-more" placeholder="Повторите пароль" disabled/>
+                </div>
+                <div class="form-input">
+                    <label for="user-type"></label>
+                    <select id="user-type" disabled>
+                        <option selected disabled></option>
+                        <option value="Admin">Администратор</option>
+                        <option value="Moderator">Модератор</option>
+                        <option value="User">Пользователь</option>
+                    </select>
+                </div>
+                <button id="button-submit" type="submit" disabled>Отправить</button>
+            </form>
+        </div>
+        <script src="scripts/express.js"></script>
+    </body>
 </html>

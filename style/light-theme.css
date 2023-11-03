@@ -1,3 +1,4 @@
+
 html {
     padding-top: 25px;
     background-color: blanchedalmond;
@@ -26,23 +27,18 @@ label {
     display: block;
 }
 
-input {
+.form-input {
     width: 100%;
     display: block;
+}
 
-}
-button[type="submit"]{
-    width: 90%;
-    height: 30%;
-    background-color: indigo;
-    color: blanchedalmond;
-}
-button[type="submit"]:hover{
-    background-color: blanchedalmond;
-    color: indigo;
-    cursor: pointer;
-}
 select {
     width: 100%;
     margin-bottom: 5px;
+}
+.input-error {
+    border-color: red;
+}
+.input-success {
+    border-color: yellow;
 }
