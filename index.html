@@ -1,21 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
-    <link href="style/main.css" rel="stylesheet">
+<html lang="ru">
+    <link href="style/light-theme.css" rel="stylesheet" type="text/css" id="theme-link">
     <head>
         <meta charset="UTF-8">
         <title>title</title>
     </head>
     <body>
         <div class="startpage">
+            <label for="button-theme">Переключатель темы</label>
+            <button id="button-theme" type="submit" >На темную</button>
             <h1>Регистрация</h1>
-            <form class="mainform">
+            <form class="mainform" action="/reg-data" method="post">
                 <div class ="form-input">
                     <label for="input-name">Введите Ваше имя:</label>
-                    <input type="text" id="input-name" placeholder="Имя"/>
+                    <input type="text" id="input-name" placeholder="Имя" name="username"/>
                 </div>
                 <div class = "form-input">
                     <label for="input-password">Придумайте пароль:</label>
-                    <input type="password" id="input-password" placeholder="Пароль" disabled/>
+                    <input type="password" id="input-password" placeholder="Пароль" name="password" disabled/>
                 </div>
                 <div class = "form-input">
                     <label for="input-password-more">Введите пароль еще раз:</label>
@@ -23,7 +25,7 @@
                 </div>
                 <div class="form-input">
                     <label for="user-type"></label>
-                    <select id="user-type" disabled>
+                    <select id="user-type" name="usertype" disabled>
                         <option selected disabled></option>
                         <option value="Admin">Администратор</option>
                         <option value="Moderator">Модератор</option>
@@ -33,6 +35,6 @@
                 <button id="button-submit" type="submit" disabled>Отправить</button>
             </form>
         </div>
-        <script src="scripts/express.js"></script>
+        <script src="scripts/mainjs.js"></script>
     </body>
 </html>

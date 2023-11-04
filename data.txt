@@ -1,0 +1,9 @@
+{"username":"User 1"}
+{"username":"User 1"}
+{"username":"User 1"}
+{}
+{"username":"asdf","password":"asdfgh"}
+{"username":"asdf","password":"asdfgh"}
+{"username":"asdf","password":"asdfgh"}undefined
+{"username":"asdf","password":"asdfgh","usertype":"Admin"}
+{"username":"asdf","password":"asdfgh","usertype":"Moderator"}

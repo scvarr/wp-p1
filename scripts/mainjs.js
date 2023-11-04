@@ -2,6 +2,8 @@
 const nameInput = document.getElementById("input-name");
 const passInput = document.getElementById("input-password");
 const passMoreInput = document.getElementById("input-password-more")
+const btn=document.getElementById('button-theme')
+const theme = document.getElementById('theme-link')
 let select = document.querySelector('select');
 //const userType = document.getElementById("user-type").index
 //let userTypeValue;
@@ -51,4 +53,14 @@ passMoreInput.oninput = function () {
 select.addEventListener('change', ()=>{
     userType = select.value;
     document.getElementById("button-submit").disabled = false;
+})
+
+btn.addEventListener('click', function (){
+    if (theme.getAttribute("href")=="style/light-theme.css") {
+        theme.setAttribute('href', "style/dark-theme.css")
+        btn.firstChild.data="На светлую"
+    } else {
+        theme.setAttribute('href', "style/light-theme.css")
+        btn.firstChild.data="На темную"
+    }
 })

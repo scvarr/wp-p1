@@ -1,15 +1,15 @@
 
 html {
     padding-top: 25px;
-    background-color: blanchedalmond;
+    background-color: darkslategray;
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: brown;
+    color: deepskyblue;
 }
 
 h1 {
-    color: darkblue;
+    color: aqua;
 }
 
 .mainform {
@@ -41,6 +41,7 @@ select {
 #button-theme {
     width: 100%;
 }
+
 input::placeholder {
-    color: slategrey;
+    color: azure;
 }
