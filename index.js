@@ -7,7 +7,6 @@ app.use(express.json())
 app.use(express.urlencoded({extended: true}))
 app.use('/style', express.static('style'));
 app.use('/scripts', express.static('scripts'));
-
 app.get('*', (req, res) =>{
     res.sendFile("index.html", {root: path.join(__dirname)})
     })
