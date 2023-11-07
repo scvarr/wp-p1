@@ -7,3 +7,4 @@
 {"username":"asdf","password":"asdfgh"}undefined
 {"username":"asdf","password":"asdfgh","usertype":"Admin"}
 {"username":"asdf","password":"asdfgh","usertype":"Moderator"}
+{"username":"фыва","password":"фывапр","usertype":"Admin"}
