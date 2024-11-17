@@ -56,7 +56,7 @@ select.addEventListener('change', ()=>{
 })
 
 btn.addEventListener('click', function (){
-    if (theme.getAttribute("href")=="style/light-theme.css") {
+    if (theme.getAttribute("href")==="style/light-theme.css") {
         theme.setAttribute('href', "style/dark-theme.css")
         btn.firstChild.data="На светлую"
     } else {
